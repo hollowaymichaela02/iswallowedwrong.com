@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  color: white;
+  padding: 20px;
+  background: #5a0b0b;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: #9c0404;
+}
+
+/* Left column with a larger 10% gap on the outer left */
+.leftcolumn {
+  float: left;
+  width: 55%;
+  margin-left: 10%; 
+}
+
+/* Right column with a larger 8% gap on the outer right */
+.rightcolumn {
+  float: right; 
+  width: 20%;
+  margin-right: 13%; 
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: #290e0e;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  max-width: 1500px;         
+  width: 100%;                
+  margin: 20px auto !important; 
+  display: block;           
+  padding: 20px;
+  text-align: center;
+  background: #3f3f3f;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>About Me</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Hi, I'm Chaela</h2>
+      <h5> I made this HTML website cause wordpress pissed me off :(</h5>
+  <p>What more could you possibly want to know?
+      </p>
+      <img src="C:\Users\hollo\OneDrive\Documents\blog\images\big5personality.jpg" style="width:100%; height:100%; object-fit: cover;">
+      <h5>Sept 13, 2026</h5>
+        </div>
+
+        
+ </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h3>Where to next?!</h3>
+      <div class="fakeimg"><a href="index.html" style="color: white">Home</a></div><br>
+      <div class="fakeimg"><a href="post.html" style="color: white">Posts</a></div><br>
+      <div class="fakeimg"><a href="photos.html" style="color: white">Photos</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Thanks for visiting!</h2>
+   <p>Contact Me</p>
+   <p>hollowaymichaela02@gmail.com</p>
+</div>
+
+</body>
+</html>
