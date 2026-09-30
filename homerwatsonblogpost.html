@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: century gothic;
+  color: white;
+  padding: 20px;
+  background: #F2F2F2
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background:#D9D9D9;
+}
+
+/* Left column with a larger 10% gap on the outer left */
+.leftcolumn {
+  float: left;
+  width: 55%;
+  margin-left: 10%; 
+}
+
+/* Right column with a larger 8% gap on the outer right */
+.rightcolumn {
+  float: right; 
+  width: 20%;
+  margin-right: 13%; 
+}
+  .rightcolumn img {
+    display: block;
+    margin: 0 auto 15px auto; /* Centers the image and removes the mobile layout gap */
+    max-width: 100%;          /* Prevents the image from bursting out of the card */
+  }
+
+
+/* Fake image */
+.fakeimg {
+  background-color: #d9d9d9;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: #bfafaf;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  max-width: 1500px;         
+  width: 100%;                
+  margin: 20px auto !important; 
+  display: block;           
+  padding: 20px;
+  text-align: center;
+  background: #d9d9d9;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+    float: none;        /* Removes the desktop float behavior */
+    margin-left: 0;     /* Resets the 10% desktop left margin */
+    margin-right: 0;    /* Resets the 13% desktop right margin */
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2 style="margin-bottom: 10px;">i swallowed wrong dot com</h2>
+    <p style="font-size: 10px;" >(my kind of personal school blog)</p>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Homer Watson's House</h2>
+      <h5>Sept. 28, 2026</h5>
+      <h5>"Homer Watson House & Gallery preserves and celebrates the legacy of Homer Watson’s creative spirit."</p>
+         </h5>
+      <img src="C:\Users\hollo\OneDrive\Documents\blog\images\homerwatson.jpeg" style="width:100%; height:100%; object-fit: cover;">
+      <p>You've heard of Homer Watson Boulevard, but have you ever been to the Homer Watson house?
+         Located on Old Mill Road, just a few minutes from Conestoga College, you can visit the beautiful home that Watson once lived in.
+        Built over 190 years ago, it has been preserved as a national historic site. Take a virtual tour <a href="https://homerwatson.on.ca/visit/walking-tours/" style="color: white">here</a>.</p>
+        </div>
+ </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h3>Where to next?!</h3>
+      <div class="fakeimg"><a href="index.html" style="color: white">Home</a></div><br>
+      <div class="fakeimg"><a href="aboutme.html" style="color: white">About Me</a></div><br>
+      <div class="fakeimg"><a href="post.html" style="color: white">Archive</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Thanks for visiting!</h2>
+   <p>Contact Me</p>
+   <p>hollowaymichaela02@gmail.com</p>
+</div>
+
+</body>
+</html>
